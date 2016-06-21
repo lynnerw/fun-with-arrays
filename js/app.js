@@ -20,15 +20,13 @@ for (var fizbuzNum = 1; fizbuzNum <= userNum; fizbuzNum++) {
 }
 var userNum = prompt('Please enter whole number greater than zero.', 90);
 
-for isNaN(parseInt(userNum)) {
-document.write('Ooops. I need a number.');
-var userNum = prompt('Please enter whole number greater than zero.', 90);
-}
 if ((parseInt(userNum) % parseInt(userNum)) === 0) {
   document.write('You picked ' + (parseInt(userNum)) + '.<br>' + 'Here we go!<br>');
   fizzurNum(userNum);
   }
   else {
-    document.write('You\'re done.')
-  };
+    document.write('Ooops. I need a number. One more try...');
+    var userNum = prompt('Please enter whole number greater than zero.', 90);
+    }
+    document.write('<br>' + 'You\'re done.');
 });
